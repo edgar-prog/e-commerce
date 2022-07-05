@@ -1,0 +1,174 @@
+
+@media screen and (min-width: 0) {
+	.container {
+	  margin: 0px;
+	}
+	
+	.container__logo {
+	  order: 1;	
+	  width: 35%;
+	}
+	
+	.container__search{
+	  order: 3;	
+	}
+	
+	.search__input {
+		width: 0;
+	}
+	
+	.search__input::placeholder {
+		color: transparent;
+	}
+	
+	.container__search:hover 
+	> .search__input {
+		width: 5rem;
+	}
+	
+	.container__login {
+	  order: 2;
+	}
+	
+	.login__icon { 
+	  
+	}
+	
+	.login__label {
+	  display: none;
+	}
+
+}	
+	
+	
+@media screen and (min-width: 768px) {	
+	.container {
+	  margin: 0rem 3rem 0rem 3rem;
+	}
+	
+	.container__logo {
+	  order: 1;	
+	  width: 20%;
+	}
+	
+	.container__search{
+	  order: 2;	
+	}
+	
+	.search__input {
+		width: 20rem;
+	}
+	
+	.container__search:hover 
+	> .search__input {
+		width: 20rem;
+	}	
+	
+	.search__input::placeholder {
+		color: black;
+	}
+
+	.container__login {
+      order: 3;
+	}
+
+	.login__label {
+	  display: none;
+	}
+}	
+
+@media screen and (min-width: 992px) {
+	.container {
+	  margin: 0rem 5rem 0rem 5rem;
+	}
+	
+	.container__logo {
+	  order: 1;	
+	  width: 20%;
+	}
+	
+	.container__search{
+	  order: 2;
+	}
+	
+	.search__input {
+		width: 20rem;
+	}
+	
+	.container__search:hover 
+	> .search__input {
+		width: 20rem;
+	}	
+	
+	.container__login {
+	  order: 3;	 
+	}
+	
+	.login__label {
+	  display: block;
+	  padding-left: 1rem;
+	  font-size: 1.3rem; 
+	}
+}
+
+header {
+  background: gold;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container__search {
+  background: chocolate;
+  border-radius: 50px;
+  padding: 0.75rem;
+}
+
+.search__input {
+  font-size: 1.3rem;
+  background: none;
+  border: none;
+  outline: none;
+  float: left;
+  line-height: 1.3rem;
+  transition: 0.5s;
+}
+
+.search__icon {
+  font-size: 1.3rem;
+}
+
+.container__login {
+  color: white;
+  padding: 0.75rem;
+  border-radius: 50px;
+  background: #0B0B0B;
+  display: flex;
+  align-items: center;
+}
+
+.container__login:hover {
+  transform: scale(1.1);
+}
+
+.login__icon { 
+  font-size: 1.3rem;
+  animation: mi-animacion 2s infinite reverse;
+}
+
+@keyframes mi-animacion{
+  from { 
+	color: #F9DC17;
+  }
+  to { 
+	color: #DC2214;
+  }
+}
+
+
+
+
