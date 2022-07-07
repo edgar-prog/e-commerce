@@ -1,15 +1,15 @@
 
 @media screen and (min-width: 0) {
-	.container {
+	.container__header {
 	  margin: 0px;
 	}
 	
-	.container__logo {
+	.header__logo{
 	  order: 1;	
 	  width: 35%;
 	}
 	
-	.container__search{
+	.header__search{
 	  order: 3;	
 	}
 	
@@ -21,17 +21,13 @@
 		color: transparent;
 	}
 	
-	.container__search:hover 
+	.header__search:hover 
 	> .search__input {
 		width: 5rem;
 	}
 	
-	.container__login {
+	.header__login {
 	  order: 2;
-	}
-	
-	.login__icon { 
-	  
 	}
 	
 	.login__label {
@@ -42,16 +38,16 @@
 	
 	
 @media screen and (min-width: 768px) {	
-	.container {
+	.container__header {
 	  margin: 0rem 3rem 0rem 3rem;
 	}
 	
-	.container__logo {
+	.header__logo {
 	  order: 1;	
 	  width: 20%;
 	}
 	
-	.container__search{
+	.header__search{
 	  order: 2;	
 	}
 	
@@ -59,16 +55,16 @@
 		width: 20rem;
 	}
 	
-	.container__search:hover 
+	.header__search:hover 
 	> .search__input {
 		width: 20rem;
 	}	
 	
 	.search__input::placeholder {
-		color: black;
+		color: var(--color-hold);
 	}
 
-	.container__login {
+	.header__login {
       order: 3;
 	}
 
@@ -78,16 +74,16 @@
 }	
 
 @media screen and (min-width: 992px) {
-	.container {
+	.container__header  {
 	  margin: 0rem 5rem 0rem 5rem;
 	}
 	
-	.container__logo {
+	.header__logo {
 	  order: 1;	
 	  width: 20%;
 	}
 	
-	.container__search{
+	.header__search{
 	  order: 2;
 	}
 	
@@ -95,12 +91,12 @@
 		width: 20rem;
 	}
 	
-	.container__search:hover 
+	.header__search:hover 
 	> .search__input {
 		width: 20rem;
 	}	
 	
-	.container__login {
+	.header__login {
 	  order: 3;	 
 	}
 	
@@ -112,18 +108,19 @@
 }
 
 header {
-  background: gold;
+  background: var(--color-head);
   padding: 1rem;
 }
 
-.container {
+.container__header  {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.container__search {
-  background: chocolate;
+.header__search {
+  background: var(--color-input);
+  color: var(--color-head);
   border-radius: 50px;
   padding: 0.75rem;
 }
@@ -131,6 +128,7 @@ header {
 .search__input {
   font-size: 1.3rem;
   background: none;
+  color: var(--color-hold);
   border: none;
   outline: none;
   float: left;
@@ -142,7 +140,7 @@ header {
   font-size: 1.3rem;
 }
 
-.container__login {
+.header__login {
   color: white;
   padding: 0.75rem;
   border-radius: 50px;
@@ -151,16 +149,16 @@ header {
   align-items: center;
 }
 
-.container__login:hover {
+.header__login:hover {
   transform: scale(1.1);
 }
 
 .login__icon { 
   font-size: 1.3rem;
-  animation: mi-animacion 2s infinite reverse;
+  animation: mi-login 2s infinite reverse;
 }
 
-@keyframes mi-animacion{
+@keyframes mi-login{
   from { 
 	color: #F9DC17;
   }
@@ -168,7 +166,4 @@ header {
 	color: #DC2214;
   }
 }
-
-
-
 

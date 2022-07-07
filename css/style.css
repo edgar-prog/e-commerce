@@ -1,7 +1,20 @@
 
-body{
+*{
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+   --color-fondo: #ABB7D1;
+   --color-head: #ffd700;
+   --color-input: #1B5583;
+   --color-hold: #F5FFF5;
+   --color-banner: #FFFFFF;
+}
+
+body {
  font-size: 100%;
- background: #ABB7D1;
+ /* background: var(--color-fondo); */
 }
 
 

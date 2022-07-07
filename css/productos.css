@@ -1,0 +1,26 @@
+
+
+
+.boards__info {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.productos__boards {
+	display: flex;
+}
+
+.boards__cards {
+	display: flex;
+}
+
+.cards__item {
+	display: flex;
+	flex-direction: column;
+}
+
+.item__img {
+	width: 200px;
+	height: auto;
+}

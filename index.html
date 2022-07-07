@@ -5,28 +5,84 @@
 		<meta charset="utf-8">
 		<title>e-commerce alura</title>
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;400&family=Train+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/banner.css">
+		<link rel="stylesheet" href="css/productos.css">
 	</head>
 <body>
 	<header>
-		<div class="container">
-			<img class="container__logo" src="img/logo_alura.png" alt="" >
-			<div class="container__search">
+		<div class="container__header">
+			<img class="header__logo" src="img/logo_alura.png" alt="" >
+			<div class="header__search">
 				<span class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
 				<input class="search__input" type="search" placeholder="¿Que deseas buscar?" />
 			</div>
-			<div class="container__login">
+			<div class="header__login">
 				<span class="login__icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
 				<label class="login__label">login</label>
 			</div>
 		</div>
 	</header>
 
-	<section>
+	<section class="container__banner">
+		<div class="banner">
+			<div class="banner__descuentos">
+				<img class="descuentos__img" src="img/s-l1600(9).jpg" alt="">
+				<h3>Productos seleccionados con 33% de descuento</h3>
+				<div class="descuentos__ir-a">
+					<label>ir a</label>
+					<span><i class="fa-solid fa-bag-shopping"></i></span>
+				</div>
+			</div>
+			<div class="banner__content">
+				<span class="content__titulo">Venta de componentes electronicos</span>
+				<p>Te ayudamos a realices tus proyectos de electronica con la mejor calidad</p>
+			</div>
+		</div>
 	</section>
-	<footer>
-	</footer>
+	
+	<section class="container__productos">
+		<div class="productos__boards">
+			<div class="boards__info">
+				<h3>boards</h3>
+				<div>
+					<span>ver todo</span>
+					<i class="fa-solid fa-square-caret-right"></i>
+				<div>
+			</div>	
+			<div class="boards__cards">
+				<div class="cards__item">
+					<img src="img/s-l1600(0).png" alt="" class="item__img">
+					<span class="item__titulo">Arduino nano</span>
+					<span class="item__precio">US$3.55</span>
+					<span class="item__ver">ver producto</span>
+				</div>
+				<div class="cards__item">
+					<img src="img/s-l1600(5).jpg" alt="" class="item__img">
+					<span class="item__titulo">Raspberry pi4</span>
+					<span class="item__precio">US$145.00</span>
+					<span class="item__ver">ver producto</span>
+				</div>
+				<div class="cards__item">
+					<img src="img/s-l1600(2).jpg" alt="" class="item__img">
+					<span class="item__titulo">Arduino uno WiFi Rev2</span>
+					<span class="item__precio">US$26.54</span>
+					<span class="item__ver">ver producto</span>
+				</div>
+				<div class="cards__item">
+					<img src="img/s-l1600(7).JPG" alt="" class="item__img">
+					<span class="item__titulo">Artix-7 FPGA</span>
+					<span class="item__precio">US$159.00</span>
+					<span class="item__ver">ver producto</span>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
 </body>
 </html>
