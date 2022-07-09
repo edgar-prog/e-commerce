@@ -1,8 +1,12 @@
 
+.productos__semiconductores,
+.productos__herramientas,
 .productos__boards {
 	margin: 2rem 5rem 2rem 5rem;
 }
 
+.semiconductores__info,
+.herraminetas__info,
 .boards__info {
 	margin: 1rem 0 1rem 0;
 	display: flex;
@@ -10,19 +14,24 @@
 	font-family: 'Kodchasan', sans-serif;
 }
 
+.semiconductores__info h3,
+.herraminetas__info h3,
 .boards__info h3 {
-	
 	font-size: 1.5rem;
 	color: blue;
 	font-weight: bold;
 }
 
+.semiconductores__info div,
+.herraminetas__info div,
 .boards__info div {
 	font-size: 1rem;
 	color: blue;
 	padding-right: 15px;
 }
 
+.semiconductores__cards,
+.herraminetas__cards,
 .boards__cards {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -48,7 +57,8 @@
 }
 
 .item__img-board {
-	max-width: 100%;
+	max-width: 90%;
+	max-height: 90%;
 }
 
 .item__content {
@@ -60,7 +70,6 @@
 .item__content .item__titulo {
 	font-weight: bold;
 }
-
 
 .item__content .item__ver {
 	color: blue;
