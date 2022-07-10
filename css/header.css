@@ -1,7 +1,7 @@
 
-@media screen and (min-width: 0) {
+@media screen and (min-width: 0px) {
 	.container__header {
-	  margin: 0px;
+	  margin: 0 1rem 0 1rem;
 	}
 	
 	.header__logo{
@@ -109,7 +109,7 @@
 
 header {
   background: var(--color-head);
-  padding: 1rem;
+  padding: 1rem 0 1rem 0; */
 }
 
 .container__header  {
@@ -145,6 +145,7 @@ header {
   padding: 0.75rem;
   border-radius: 50px;
   background: #0B0B0B;
+  font-family: 'Alata', sans-serif;
   display: flex;
   align-items: center;
 }
