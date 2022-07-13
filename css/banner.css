@@ -35,7 +35,6 @@
 		height: 200px;
 		display: block;
 	}
-	
 }
 
 .container__banner {
@@ -95,3 +94,4 @@
 .descuentos__ir-a:hover {
 	transform: scale(1.1);
 }
+

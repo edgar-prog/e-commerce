@@ -141,11 +141,10 @@ header {
 }
 
 .header__login {
-  color: white;
+  color: var(--color-font);
   padding: 0.75rem;
   border-radius: 50px;
-  background: #0B0B0B;
-  font-family: 'Alata', sans-serif;
+  background: var(--background-btn);
   display: flex;
   align-items: center;
 }

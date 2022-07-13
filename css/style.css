@@ -5,16 +5,30 @@
 }
 
 :root{
-   --color-fondo: #ABB7D1;
    --color-head: #ffd700;
+   --color-contacto: #48b4e0;
+   --color-footer: #386890;
+   
    --color-input: #1B5583;
    --color-hold: #F5FFF5;
-   --color-banner: #FFFFFF;
-}
+   --background-btn: #0B0B0B;
+   --color-font: white;
+   --color-links: black;
+  
+ }
 
 body {
- font-size: 100%;
- /* background: var(--color-fondo); */
+	font-size: 100%;
+	font-family: 'Alata', sans-serif;
+ 
 }
 
+/* .container__productos,
+.container__banner, */
+.section_hide {
+	display: none;
+}
 
+.section_show {
+	display: block;
+}

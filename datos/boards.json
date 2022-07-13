@@ -1,34 +1,34 @@
 {
 "boards" : [
 	{
-		"archivo":"img/s-l1600(0).png",
+		"archivo":"img/boards/s-l1600(0).png",
 		"nombre":"Arduino nano",
-		"precio":"US$3.55" 
+		"precio":"US $3.55" 
 	},
 	{
-		"archivo":"img/s-l1600(1).jpg",
+		"archivo":"img/boards/s-l1600(1).jpg",
 		"nombre":"Raspberry pi4",
-		"precio":"US$145.00" 
+		"precio":"US $145.00" 
 	},
 	{
-		"archivo":"img/s-l1600(2).jpg",
+		"archivo":"img/boards/s-l1600(2).jpg",
 		"nombre":"Arduino uno WiFi Rev2",
-		"precio":"US$26.54" 
+		"precio":"US $26.54" 
 	},
 	{
-		"archivo":"img/s-l1600(3).png",
+		"archivo":"img/boards/s-l1600(3).png",
 		"nombre":"Artix-7 FPGA",
-		"precio":"US$159.00" 
+		"precio":"US $159.00" 
 	},
 	{
-		"archivo":"img/s-l1600(4).png",
+		"archivo":"img/boards/s-l1600(4).png",
 		"nombre":"Elbert V2 -Spartan 3A",
-		"precio":"US$45.20" 
+		"precio":"US $45.20" 
 	},
 	{
-		"archivo":"img/s-l1600(5).png",
+		"archivo":"img/boards/s-l1600(5).png",
 		"nombre":"TM4C123GXL Tiva C",
-		"precio":"US$44.99" 
+		"precio":"US $44.99" 
 	}
 ]
 }

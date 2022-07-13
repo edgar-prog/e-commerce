@@ -1,0 +1,17 @@
+
+.footer__develop {
+	background-color: var(--color-footer);
+	height: 4rem;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.develop__repositorio {
+	padding: 1rem;
+}
+
+.develop__nombre {
+	padding: 1rem;
+	color: white;
+	line-height: 60px;
+}

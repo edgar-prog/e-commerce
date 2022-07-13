@@ -1,0 +1,64 @@
+
+.container__login {
+	height: 335px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.formulario__login {
+	margin: 0;
+	border: 2px solid green;
+	border-radius: 5px;
+	width: 350px;
+	height: 260px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.formulario__login label {
+	padding-left: 2rem;
+	text-align: left;
+}
+
+.login__titulo {
+	align-self: center;
+}
+
+.login__usuario {
+	background-position: 5% 50%;
+	background-image: url("../img/usuario.png");
+	background-repeat: no-repeat;
+}
+
+.login__password {
+	background-position: 5% 50%;
+	background-image: url("../img/llave.png");
+	background-repeat: no-repeat;
+}
+
+.formulario__login input[type=text],
+.formulario__login input[type="password"] {
+  align-self: center;		
+  width: 80%;
+  padding: 12px 20px 12px 40px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.login__in {
+	align-self: center;
+	padding: 0.5rem;
+	margin: 1rem;
+	border-radius: 50px;
+	color: var(--color-font);
+	background: var(--background-btn);
+	font-size: 1rem;
+	text-align: center;
+	width: 10rem;
+}
+
+.login__in:hover {
+	transform: scale(1.1);
+}

@@ -1,0 +1,85 @@
+
+@media screen and (min-width: 0px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+
+
+}
+
+.container__all-productos {
+	
+}
+
+.all-productos__cards {
+	margin: 2rem 2rem;
+}
+
+.cards__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cards__agregar {
+	align-self: center;
+	padding: 0.5rem;
+	margin: 1rem;
+	border-radius: 50px;
+	color: var(--color-font);
+	background: var(--background-btn);
+	font-size: 1rem;
+	text-align: center;
+	width: 10rem;
+}
+
+.cards__all-stock {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-column-gap: 25px;
+}
+
+.all_stocks {
+	width: 160px;
+	height: 230px;
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+}
+
+.stocks-img {
+	display: inline-block;
+	position: relative;
+}
+
+.icon-producto {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #0061a9;
+	font-size: 1.5rem;
+}
+
+.icon-producto i {
+	padding: 5px;
+}
+
+.img-producto {
+	max-width: 100%;
+	max-height: 100%;
+	filter: opacity(40%);
+}
+
+.stocks-info {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: left;
+}

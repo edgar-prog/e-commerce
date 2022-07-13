@@ -1,75 +1,130 @@
 
+@media screen and (min-width: 0px) {
+	.contacto__all-info {
+		padding: 2rem 1rem 2rem 1rem;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	
+	.all-info__quienes {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	
+	.logo__alura {
+		justify-self: center;
+		max-width: 50%;
+		padding: 1rem 0 1rem 0;
+	}
+	
+	.links__items {
+		text-align: center;
+	}
+	
+	.all-info__formulario {
+		margin-top: 3rem;
+	}
+	
+}
 
+@media screen and (min-width: 768px) {
+	.contacto__all-info {
+		display: grid;
+		padding: 2rem 2rem 2rem 2rem;
+		grid-template-columns: 1fr 2fr;
+		text-align: left;
+	}
+	
+	.logo__alura {
+		justify-self: left;
+		max-width: 60%;
+		padding: 1rem 0 1rem 0;
+	}
+	
+	.links__items {
+		text-align: left;
+	}
+	
+	.all-info__formulario {
+		margin-top: 1rem;
+	}
+	
+}
+
+@media screen and (min-width: 992px) {
+	.contacto__all-info {
+		display: grid;
+		padding: 2rem 2rem 2rem 2rem;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 15px;
+	}
+	
+	.all-info__quienes {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 20px;
+		text-align: left;
+	}	
+	
+	.logo__alura {
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	.all-info__formulario {
+		margin-top: 0rem;
+	}
+}
 
 .container__contacto {
-	background: var(--color-fondo);
+	background: var(--color-contacto);
 }
 
-.contacto__all-info {
-	padding: 3rem 5rem 3rem 5rem;
-	display: grid;
-	grid-template-columns: 1fr 1fr 2fr;
-	grid-column-gap: 15px;
-}
 
-.contacto__logo {
-	width: auto;
-	padding-top: 1rem;
-	justify-self: center;
-}
-
-.logo__alura {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-.contacto__formulario {
-	padding: 1rem;
+.all-info__formulario {
 	display: flex;
 	flex-direction: column;
-	align-self: left;
-}
-
-.contacto__quienes-somos {
-	font-family: 'Alata', sans-serif;
-	justify-self: center;
-	margin-top: 1rem;
-	
-}
-
-.quienes_somos__links {
-	list-style: none;
-	
 }
 
 .links__items {
-	margin-bottom: 1rem;
+	list-style: none;
+	padding-bottom: 0.5rem;
 }
 
-.quienes_somos__links a {
-	color: white;
+.links__items a {
 	text-decoration: none;
-	
+	color: var(--color-links);
 }
 
 .formulario__label {
-	color: white;
-	font-family: 'Alata', sans-serif;
-	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
 }
 
 .formulario__input {
-	width: 20rem;
-	margin-bottom: 1rem;
+	background-position: 5% 50%;
+	background-image: url("../img/id.png");
+	background-repeat: no-repeat;
+	width: 60%;
+	padding: 12px 20px 12px 40px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+.formulario__mensaje {
+	padding: 12px 20px 12px 40px;
+	margin: 8px 0;
+	box-sizing: border-box;
 }
 
 .formulario__enviar {
 	margin-top: 1rem; 
 	width: 10rem;
-	color: white;
+	color: var(--color-font);
 	padding: 0.75rem;
+	font-size: 1rem;
 	border-radius: 50px;
-	background: #0B0B0B;
+	background: var(--background-btn);
 }
 
 .formulario__enviar:hover {

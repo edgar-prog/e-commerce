@@ -7,12 +7,14 @@
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;400&family=Train+One&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-		<!-- <link rel="stylesheet" href="css/reset.css"> -->
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/header.css">
 		<link rel="stylesheet" href="css/banner.css">
 		<link rel="stylesheet" href="css/productos.css">
+		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" href="css/all_productos.css">
 		<link rel="stylesheet" href="css/contacto.css">
+		<link rel="stylesheet" href="css/footer.css">
 	</head>
 <body>
 	<header>
@@ -32,7 +34,7 @@
 	<section class="container__banner">
 		<div class="banner__descuentos">
 			<div class="descuento__producto">
-				<img class="descuentos__img" src="img/s-l1600(6).jpg" alt="">
+				<img class="descuentos__img" src="img/boards/s-l1600(6).jpg" alt="">
 			</div>	
 			<div class="descuentos__comemts">
 				<h1>Febrero promocional</h1>
@@ -46,6 +48,7 @@
 	</section>
 	
 	<section class="container__productos">
+	
 		<div class="productos__boards">
 			<div class="boards__info">
 				<h3>Boards</h3>
@@ -56,8 +59,102 @@
 			</div>	
 			<div class="boards__cards">	</div>
 		</div>
+		
+		<div class="productos__herramientas">
+			<div class="herraminetas__info">
+				<h3>Herramientas</h3>
+				<div>
+					<span>ver todo</span>
+					<i class="fa-solid fa-square-caret-right"></i>
+				</div>
+			</div>	
+			<div class="herraminetas__cards"></div>
+		</div>
+		
+		<div class="productos__semiconductores">
+			<div class="semiconductores__info">
+				<h3>Semiconductores</h3>
+				<div>
+					<span>ver todo</span>
+					<i class="fa-solid fa-square-caret-right"></i>
+				</div>
+			</div>	
+			<div class="semiconductores__cards"></div>
+		</div>
 	</section>
 
+	<section class="container__login">
+		<div class="formulario__login">
+			<label class="login__titulo">Iniciar Sesion</label>
+			<label>Usuario</label>
+			<input type="text" class="login__usuario" placeholder="escriba su correo electronico">
+			<label>Password</label>
+			<input type="password" class="login__password" placeholder="escrba su contraseña">
+			<button class="login__in">Entrar</button>		
+		</div>
+	</section>
+
+	<section class="container__all-productos">
+		<div class="all-productos__cards">
+			<div class="cards__info">
+				<h3>Todos los productos</h3>
+				<button class="cards__agregar">Agregar producto</button>
+			</div>	
+			<div class="cards__all-stock">
+				<div class="all_stocks">
+					<div class="stocks-img">
+						<img class="img-producto" src="./img/boards/s-l1600(0).png" >
+						<div class="icon-producto">
+							<i class="fa-solid fa-pen"></i>
+							<i class="fa-solid fa-trash"></i>
+						</div>
+					</div>
+					<div class="stocks-info">
+						<label>Producto XYZ</label>
+						<label>$US 50.00</label>
+						<label>#11111</label>
+					</div>
+				</div>
+				<div class="all_stocks">2</div>
+				<div class="all_stocks">3</div>
+				<div class="all_stocks">4</div>
+				<div class="all_stocks">5</div>
+				<div class="all_stocks">6</div>
+			</div>
+			
+		</div>
+	</section>
+	
+	<section class="container__contacto">
+		<div class="contacto__all-info">
+			<div class="all-info__quienes">
+				<img class="logo__alura" src="img/logo_alura.png" alt="">
+				<ul class="quienes_somos__links">
+					<li class="links__items"><a href="#">Quienes somos</a></li>
+					<li class="links__items"><a href="#">Politica de privacidad</a></li>
+					<li class="links__items"><a href="#">Programa de fidelidad</a></li>
+					<li class="links__items"><a href="#">Nuestras tiendas</a></li>
+					<li class="links__items"><a href="#">Quiero ser franquiciado</a></li>
+					<li class="links__items"><a href="#">Anuncie aqui</a></li>
+				</ul>
+			</div>
+			<div class="all-info__formulario">
+				<label class="formulario__label" >Habla con nosotros</label>
+				<label>Nombre</label>
+				<input type="text" class="formulario__input" placeholder="Antonio Juarez" >
+				<textarea name="" id="" cols="30" rows="10" class="formulario__mensaje" placeholder="Mensaje"></textarea>
+				<button class="formulario__enviar">Enviar mensaje</button>
+			</div>		
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer__develop">
+			<span class="develop__repositorio" ><a href="#"><i class="fa-brands fa-github"></i></a></span>
+			<span class="develop__nombre">proyecto alura 2022</span>
+		</div>
+	</footer>
 	<script type="module" src="js/productos.js"></script>
+	<script src="js/login.js"></script>
 <body>
 </html>
