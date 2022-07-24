@@ -11,8 +11,10 @@
 		<link rel="stylesheet" href="css/header.css">
 		<link rel="stylesheet" href="css/banner.css">
 		<link rel="stylesheet" href="css/productos.css">
+		<link rel="stylesheet" href="css/formulario.css">
 		<link rel="stylesheet" href="css/login.css">
 		<link rel="stylesheet" href="css/all_productos.css">
+		<link rel="stylesheet" href="css/addproducto.css">
 		<link rel="stylesheet" href="css/contacto.css">
 		<link rel="stylesheet" href="css/footer.css">
 	</head>
@@ -85,12 +87,20 @@
 
 	<section class="container__login">
 		<div class="formulario__login">
-			<label class="login__titulo">Iniciar Sesion</label>
-			<label>Usuario</label>
-			<input type="text" class="login__usuario" placeholder="escriba su correo electronico">
-			<label>Password</label>
-			<input type="password" class="login__password" placeholder="escrba su contraseña">
-			<button class="login__in">Entrar</button>		
+			<div class="formulario__titulo">
+				<label>Iniciar Sesion</label>
+			</div>
+			<div class="formulario">
+				<div class="casilla__input">
+					<input type="text" class="input" placeholder=" ">
+					<span class="label">Usuario</span>
+				</div>
+				<div class="casilla__input">
+					<input type="password" class="input" placeholder=" ">
+					<span class="label">Password</span>
+				</div>
+				<button class="button" id="login__in">Entrar</button>	
+			</div>
 		</div>
 	</section>
 
@@ -101,27 +111,39 @@
 				<button class="cards__agregar">Agregar producto</button>
 			</div>	
 			<div class="cards__all-stock">
-				<div class="all_stocks">
-					<div class="stocks-img">
-						<img class="img-producto" src="./img/boards/s-l1600(0).png" >
-						<div class="icon-producto">
-							<i class="fa-solid fa-pen"></i>
-							<i class="fa-solid fa-trash"></i>
-						</div>
-					</div>
-					<div class="stocks-info">
-						<label>Producto XYZ</label>
-						<label>$US 50.00</label>
-						<label>#11111</label>
-					</div>
-				</div>
-				<div class="all_stocks">2</div>
-				<div class="all_stocks">3</div>
-				<div class="all_stocks">4</div>
-				<div class="all_stocks">5</div>
-				<div class="all_stocks">6</div>
+				
 			</div>
 			
+		</div>
+	</section>
+	
+	<section class="container__add-producto">
+		<div class="formulario__producto">
+			<div class="formulario__titulo">
+				<label>Agregar nuevo producto</label>
+			</div>
+			<div class="formulario">
+				<div class="casilla__input">
+					<input type="text" class="input" placeholder=" ">
+					<span class="label">URL de la imagen</span>
+				</div>
+				<div class="casilla__input">
+					<input type="text" class="input" placeholder=" ">
+					<span class="label">Categoria</span>
+				</div>
+				<div class="casilla__input">
+					<input type="text" class="input" placeholder=" ">
+					<span class="label">Nombre del producto</span>
+				</div>
+				<div class="casilla__input">
+					<input type="text" class="input"placeholder=" " >
+					<span class="label">Pecio del producto</span>
+				</div>
+				<div class="casilla__input">
+					<textarea id="" class="textarea" placeholder="Descripcion del producto"></textarea>
+				</div>
+				<button class="button">Agregar producto</button>
+			</div>	
 		</div>
 	</section>
 	
@@ -138,13 +160,21 @@
 					<li class="links__items"><a href="#">Anuncie aqui</a></li>
 				</ul>
 			</div>
-			<div class="all-info__formulario">
-				<label class="formulario__label" >Habla con nosotros</label>
-				<label>Nombre</label>
-				<input type="text" class="formulario__input" placeholder="Antonio Juarez" >
-				<textarea name="" id="" cols="30" rows="10" class="formulario__mensaje" placeholder="Mensaje"></textarea>
-				<button class="formulario__enviar">Enviar mensaje</button>
-			</div>		
+			<div class="formulario__contacto">
+				<div class="formulario__titulo">
+					<label>Habla con nosotros</label>
+				</div>
+				<div class="formulario" >
+					<div class="casilla__input">
+						<input type="text" class="input"placeholder=" " >
+						<span class="label">Nombre</span>
+					</div>
+					<div class="casilla__input">
+						<textarea id="" class="textarea" placeholder="Mensaje..."></textarea>
+					</div>
+					<button class="button">Enviar mensaje</button>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -154,7 +184,8 @@
 			<span class="develop__nombre">proyecto alura 2022</span>
 		</div>
 	</footer>
+	<script type="module" src="js/tarjeta.js"></script>
 	<script type="module" src="js/productos.js"></script>
-	<script src="js/login.js"></script>
+	<script type="module" src="js/login.js"></script>
 <body>
 </html>
