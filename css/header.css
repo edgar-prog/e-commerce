@@ -1,164 +1,145 @@
 
+
 @media screen and (min-width: 0px) {
-	.container__header {
-	  margin: 0 1rem 0 1rem;
+	.header {
+		margin: 0rem 2rem;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 10px;
 	}
 	
-	.header__logo{
-	  order: 1;	
-	  width: 35%;
-	}
+	.header__logo { grid-area: 1 / 1 / 2 / 2; }
+	.header__btn { grid-area: 1 / 2 / 2 / 3; }
+	.header__search { grid-area: 2 / 1 / 3 / 3; }
 	
-	.header__search{
-	  order: 3;	
-	}
 	
-	.search__input {
-		width: 0;
+	.logo {
+		width: 75%;
 	}
-	
-	.search__input::placeholder {
-		color: transparent;
-	}
-	
-	.header__search:hover 
-	> .search__input {
-		width: 5rem;
-	}
-	
-	.header__login {
-	  order: 2;
-	}
-	
-	.login__label {
-	  display: none;
-	}
-
 }	
-	
-	
-@media screen and (min-width: 768px) {	
-	.container__header {
-	  margin: 0rem 3rem 0rem 3rem;
+
+@media screen and (min-width: 768px) {
+	.header {
+		margin: 0rem 2rem;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 20px;
 	}
 	
-	.header__logo {
-	  order: 1;	
-	  width: 20%;
+	.header__logo { grid-area: 1 / 1 / 2 / 2; }
+	.header__search { grid-area: 1 / 2 / 2 / 3; }
+	.header__btn { grid-area: 1 / 3 / 2 / 4; }
+
+	.logo {
+		width: 70%;
 	}
 	
-	.header__search{
-	  order: 2;	
-	}
-	
-	.search__input {
-		width: 20rem;
-	}
-	
-	.header__search:hover 
-	> .search__input {
-		width: 20rem;
+	.header__search {
+		width: 15rem;
 	}	
-	
-	.search__input::placeholder {
-		color: var(--color-hold);
-	}
-
-	.header__login {
-      order: 3;
-	}
-
-	.login__label {
-	  display: none;
-	}
-}	
+}
 
 @media screen and (min-width: 992px) {
-	.container__header  {
-	  margin: 0rem 5rem 0rem 5rem;
+	.header {
+		margin: 0rem 5rem;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 20px;
 	}
 	
-	.header__logo {
-	  order: 1;	
-	  width: 20%;
+	.header__logo { grid-area: 1 / 1 / 2 / 2; }
+	.header__search { grid-area: 1 / 2 / 2 / 3; }
+	.header__btn { grid-area: 1 / 3 / 2 / 4; }
+	
+	.logo {
+		width: 70%;
 	}
 	
-	.header__search{
-	  order: 2;
+	.header__search {
+		width: 23rem;
 	}
 	
-	.search__input {
-		width: 20rem;
-	}
-	
-	.header__search:hover 
-	> .search__input {
-		width: 20rem;
-	}	
-	
-	.header__login {
-	  order: 3;	 
-	}
-	
-	.login__label {
-	  display: block;
-	  padding-left: 1rem;
-	  font-size: 1.3rem; 
-	}
 }
 
-header {
-  background: var(--color-head);
-  padding: 1rem 0 1rem 0; */
+.container__header {
+	background: var(--color-head);
+	padding: 1rem 0;
 }
 
-.container__header  {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.header {
+	display: grid;
+	justify-items: center;
+    align-items: center;
+}
+
+.header__logo {
+	
 }
 
 .header__search {
-  background: var(--color-input);
-  color: var(--color-head);
-  border-radius: 50px;
-  padding: 0.75rem;
+	position: relative;
 }
 
 .search__input {
-  font-size: 1.3rem;
-  background: none;
-  color: var(--color-hold);
-  border: none;
-  outline: none;
-  float: left;
-  line-height: 1.3rem;
-  transition: 0.5s;
+	background: var(--color-input);
+	color: var(--color-hold);
+	width: 100%;
+	height: 2.5rem;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 50px;
+	outline: none;
+	font-size: 1.5rem;
+	transition: all .5s;
 }
 
 .search__icon {
-  font-size: 1.3rem;
+	position: absolute;
+	right: 2px;
+	top: 0px;
+	padding: 12px;
+	border: none;
+	border-radius: 50px;
+	outline: none;
+	cursor: pointer;
+	
 }
 
-.header__login {
-  color: var(--color-font);
-  padding: 0.75rem;
-  border-radius: 50px;
-  background: var(--background-btn);
-  display: flex;
-  align-items: center;
+.search__icon:hover {
+	transform: scale(1.2);
 }
 
-.header__login:hover {
-  transform: scale(1.1);
+.header__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--background-btn);
+	color: var(--color-font);
+	border-radius: 50px;
+	width: 7rem;
+	padding: 0.5rem;
+	font-size: 1.25rem;
+	text-align: center;
 }
 
-.login__icon { 
-  font-size: 1.3rem;
-  animation: mi-login 2s infinite reverse;
+.header__btn:hover {
+	transform: scale(1.1);
 }
 
-@keyframes mi-login{
+
+#menu,
+#back,
+#logout {
+	display: none;
+}
+
+.icon__btn { 
+	padding-right: 5px;
+	animation: mi-btn 2s infinite reverse;
+}
+
+@keyframes mi-btn{
   from { 
 	color: #F9DC17;
   }
@@ -166,4 +147,21 @@ header {
 	color: #DC2214;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

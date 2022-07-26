@@ -19,19 +19,41 @@
 		<link rel="stylesheet" href="css/footer.css">
 	</head>
 <body>
-	<header>
-		<div class="container__header">
-			<img class="header__logo" src="img/logo_alura.png" alt="" >
-			<div class="header__search">
-				<span class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-				<input class="search__input" type="search" placeholder="¿Que deseas buscar?" />
+	<section class="container__header">
+		<div class="header">
+			<div class="header__logo">
+				<img class="logo" src="img/logo_alura.png">
 			</div>
-			<div class="header__login">
-				<span class="login__icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
+			<div class="header__search">
+				<input class="search__input" type="search" placeholder="¿Que deseas buscar?"/>
+				<button type="submit" class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+			</div>
+			<div class="header__btn" id="login">
+				<span class="icon__btn">
+					<i class="fa-solid fa-right-to-bracket"></i>
+				</span>
 				<label class="login__label">login</label>
 			</div>
+			<div class="header__btn" id="back">
+				<span class="icon__btn">
+					<i class="fa-solid fa-rotate-left"></i>
+				</span>
+				<label class="login__label">regresar</label>
+			</div>
+			<div class="header__btn" id="logout">
+				<span class="icon__btn">
+					<i class="fa-solid fa-right-from-bracket"></i>
+				</span>
+				<label class="login__label">logout</label>
+			</div>
+			<div class="header__btn" id="menu">
+				<span class="icon__btn">
+					<i class="fa-solid fa-building-user"></i>
+				</span>
+				<label class="login__label">admin</label>
+			</div>
 		</div>
-	</header>
+	</section>
 	
 	<section class="container__banner">
 		<div class="banner__descuentos">
