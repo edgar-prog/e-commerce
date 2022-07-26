@@ -4,37 +4,43 @@
 		"archivo":"img/tools/h-l1600(0).png",
 		"nombre":"Estacion TMC de 50W",
 		"precio":"US $45.20",
-		"cantidad": 1	
+		"cantidad": 1,
+		"descripcion": ""
 	},
 	{
 		"archivo":"img/tools/h-l1600(1).png",
 		"nombre":"Kit de soldadura",
 		"precio":"US $38.09",
-		"cantidad": 1
+		"cantidad": 1,
+		"descripcion": ""
 	},
 	{
 		"archivo":"img/tools/h-l1600(2).png",
 		"nombre":"Microscopio MC75T",
 		"precio":"US $761.71",
-		"cantidad": 1	
+		"cantidad": 1,
+		"descripcion": ""		
 	},
 	{
 		"archivo":"img/tools/h-l1600(3).png",
 		"nombre":"Multimetro ZOYI ZT-98",
 		"precio":"US $25.77",
-		"cantidad": 1	
+		"cantidad": 1,
+		"descripcion": ""	
 	},
 	{
 		"archivo":"img/tools/h-l1600(4).png",
 		"nombre":"Analizador de baterias",
 		"precio":"US $14.65",
-		"cantidad": 1	
+		"cantidad": 1,
+		"descripcion": ""	
 	},
 	{
 		"archivo":"img/tools/h-l1600(5).png",
 		"nombre":"Probador LCR-TC1",
 		"precio":"US $11.69",
-		"cantidad": 1
+		"cantidad": 1,
+		"descripcion": ""
 	}
 ]
 }

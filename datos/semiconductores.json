@@ -5,37 +5,43 @@
 		"archivo":"img/semiconductores/x-l1600(0).png",
 		"nombre":"TDA7293 100W",
 		"precio":"US$6.48",
-		"cantidad": 1
+		"cantidad": 1,
+		"descripcion": ""
 	},
 	{
 		"archivo":"img/semiconductores/x-l1600(1).png",
 		"nombre":"TIP41C NPN",
 		"precio":"US$0.78",
-		"cantidad": 1
+		"cantidad": 1,
+		"descripcion": ""
 	},
 	{
 		"archivo":"img/semiconductores/x-l1600(2).png",
 		"nombre":"NE555",
 		"precio":"US$0.65",
-		"cantidad": 1
+		"cantidad": 1,
+		"descripcion": ""
 	},
 	{
 		"archivo":"img/semiconductores/x-l1600(3).png",
 		"nombre":"ATTINY85-20PU",
 		"precio":"US$4.54",
-		"cantidad": 1	
+		"cantidad": 1,
+		"descripcion": ""		
 	},
 	{
 		"archivo":"img/semiconductores/x-l1600(4).png",
 		"nombre":"RS-232 DRIVERS",
 		"precio":"US$2.59",
-		"cantidad": 1
+		"cantidad": 1,
+		"descripcion": ""
 	},
 	{
 		"archivo":"img/semiconductores/x-l1600(5).png",
 		"nombre":"Driver Motor L293D",
 		"precio":"US$1.56",
-		"cantidad": 1	
+		"cantidad": 1,
+		"descripcion": ""	
 	}
 ]
 }
