@@ -1,13 +1,10 @@
 
-
-import { loadJSON, showData }  from "./loadJSON.js";
-
-let btnLogin = document.querySelector("#login");
-let btnBack = document.querySelector("#back");
-let btnLogout = document.querySelector("#logout");
-let btnMenu = document.querySelector("#menu");
-let btnAcceso = document.querySelector("#login__in");
-let btnAddProducto = document.querySelector(".cards__agregar");
+const btnLogin = document.querySelector("#login");
+const btnBack = document.querySelector("#back");
+const btnLogout = document.querySelector("#logout");
+const btnMenu = document.querySelector("#menu");
+const btnAcceso = document.querySelector("#login__in");
+const btnAddProducto = document.querySelector(".cards__agregar");
 
 
 const banner = document.querySelector(".container__banner");
@@ -40,9 +37,9 @@ btnAcceso.addEventListener("click", () => {
 	btnLogout.style.display = "block";
 	all_productos.style.display = "block";
 	if(document.querySelector(".cards__all-stock").childNodes.length == 1) {
-		loadJSON("./datos/boards.json",showData, ".cards__all-stock", true);
+		/* loadJSON("./datos/boards.json",showData, ".cards__all-stock", true);
 		loadJSON("./datos/semiconductores.json",showData, ".cards__all-stock", true);
-		loadJSON("./datos/tools.json",showData, ".cards__all-stock", true);
+		loadJSON("./datos/tools.json",showData, ".cards__all-stock", true); */
 	}
 });
 

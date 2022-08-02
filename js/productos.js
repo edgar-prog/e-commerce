@@ -3,7 +3,7 @@ import { loadJSON, showData }  from "./loadJSON.js";
 
 window.addEventListener('load', (event) => {
     loadJSON("./datos/tools.json",showData, ".herraminetas__cards", false);
-	loadJSON("./datos/semiconductores.json",showData, ".semiconductores__cards", false);
+	/* loadJSON("./datos/semiconductores.json",showData, ".semiconductores__cards", false); */
 	loadJSON("./datos/boards.json",showData, ".boards__cards", false);
 });
 
