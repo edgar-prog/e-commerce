@@ -40,6 +40,17 @@
 	top: 8px;
 }
 
+.error {
+	position: absolute;
+	margin-bottom: 0;
+	top: 35px;
+	left: 16px;
+	background: white;
+	color: red;
+	font-size: 13px;
+	display: none;
+}
+
 .textarea {
 	border: none;
 	resize: none;
@@ -86,4 +97,16 @@
 
 .button:hover {
 	transform: scale(1.1);
+}
+
+.exito-general {
+	margin-top: 10px;
+	height:45px;
+	line-height: 45px;
+	background: #1ed12d;
+	display: none;
+}
+
+.exito-general-activo { 
+	display: block;
 }

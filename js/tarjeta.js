@@ -4,6 +4,7 @@ export function crearTarjetaHTML(datos, editable) {
 	tarjeta.className = "card__producto";
 	tarjeta.appendChild(imagenHTML(datos.archivo, editable));
 	tarjeta.appendChild(infoHTML(datos.nombre, datos.precio, datos.cantidad,editable));
+	tarjeta.setAttribute("id",datos.id);
 	return tarjeta;
 }
 
@@ -39,7 +40,7 @@ function infoHTML(dataNombre, dataPrecio, dataCantidad, editable) {
 	nombre.innerText = dataNombre;
 	
 	let precio = document.createElement("p");
-	precio.innerText = dataPrecio;
+	precio.innerText = "US $"+dataPrecio;
 	
 	div.appendChild(nombre);
 	div.appendChild(precio);

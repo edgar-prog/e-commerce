@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;400&family=Train+One&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/header.css">
 		<link rel="stylesheet" href="css/banner.css">
@@ -112,17 +113,17 @@
 			<div class="formulario__titulo">
 				<label>Iniciar Sesion</label>
 			</div>
-			<div class="formulario">
+			<form class="formulario" id="form-login">
 				<div class="casilla__input">
-					<input type="text" class="input" placeholder=" ">
+					<input type="text" class="input" placeholder=" " id="correo" name="correo" required>
 					<span class="label">Usuario</span>
 				</div>
 				<div class="casilla__input">
-					<input type="password" class="input" placeholder=" ">
+					<input type="password" class="input" placeholder=" " id="password" name="password" required>
 					<span class="label">Password</span>
 				</div>
-				<button class="button" id="login__in">Entrar</button>	
-			</div>
+				<button type="submit" class="button" id="login__in">Entrar</button>	
+			</form>
 		</div>
 	</section>
 
@@ -132,10 +133,7 @@
 				<h3>Todos los productos</h3>
 				<button class="cards__agregar">Agregar producto</button>
 			</div>	
-			<div class="cards__all-stock">
-				
-			</div>
-			
+			<div class="cards__all-stock" data-all_productos>	</div>
 		</div>
 	</section>
 	
@@ -144,28 +142,35 @@
 			<div class="formulario__titulo">
 				<label>Agregar nuevo producto</label>
 			</div>
-			<div class="formulario">
-				<div class="casilla__input">
-					<input type="text" class="input" placeholder=" ">
+			<form class="formulario" id="form-producto">
+				<div class="casilla__input" id="url">
+					<input type="text" class="input" placeholder=" " name="url" required>
 					<span class="label">URL de la imagen</span>
+					<p class="error">Error en direccion URL de la imagen</p>
 				</div>
-				<div class="casilla__input">
-					<input type="text" class="input" placeholder=" ">
+				<div class="casilla__input" id="categoria">
+					<input type="text" class="input" placeholder=" " name="categoria" required>
 					<span class="label">Categoria</span>
+					<p class="error">Error ingrese la categoria correctamente</p>
 				</div>
-				<div class="casilla__input">
-					<input type="text" class="input" placeholder=" ">
+				<div class="casilla__input" id="nombre">
+					<input type="text" class="input" placeholder=" " name="nombre" required>
 					<span class="label">Nombre del producto</span>
+					<p class="error">Error debe ingresar un nombre</p>
 				</div>
-				<div class="casilla__input">
-					<input type="text" class="input"placeholder=" " >
+				<div class="casilla__input" id="precio">
+					<input type="text" class="input" placeholder=" " name="precio" required>
 					<span class="label">Pecio del producto</span>
+					<p class="error">Error debe ingresar un valor numerico</p>
 				</div>
-				<div class="casilla__input">
-					<textarea id="" class="textarea" placeholder="Descripcion del producto"></textarea>
+				<div class="casilla__input" id="descripcion">
+					<input type="text" class="textarea" name="descripcion" placeholder="Descripcion del producto">
 				</div>
-				<button class="button">Agregar producto</button>
-			</div>	
+				<button type="submit" class="button">Agregar producto</button>
+				<div class="exito-general">
+					<p><i class="fa-solid fa-thumbs-up"></i> Formulario enviado </p>
+				</div>
+			</form>	
 		</div>
 	</section>
 	
@@ -188,7 +193,7 @@
 				</div>
 				<div class="formulario" >
 					<div class="casilla__input">
-						<input type="text" class="input"placeholder=" " >
+						<input type="text" class="input"placeholder=" " name="contacto">
 						<span class="label">Nombre</span>
 					</div>
 					<div class="casilla__input">
@@ -206,8 +211,8 @@
 			<span class="develop__nombre">proyecto alura 2022</span>
 		</div>
 	</footer>
-	<script type="module" src="js/login.js"></script>
+	<script type="module" src="js/botonesAcceso.js"></script>
 	<script type="module" src="js/controlProductos.js"></script>
-	
+	<script type="module" src="js/validaciones.js"></script>
 <body>
 </html>

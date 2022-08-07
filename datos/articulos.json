@@ -2,166 +2,166 @@
 {
 "articulo" : [
 	{
-		"id": "", 
+		"id": "1", 
 		"categoria": "semiconductor",
 		"archivo":"img/semiconductores/x-l1600(0).png",
 		"nombre":"TDA7293 100W",
-		"precio":"US$6.48",
+		"precio":"6.48",
 		"cantidad": 1,
-		"descripcion": ""
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."
 	},
 	{
-		"id": "", 
-		"categoria": "semiconductor",
-		"archivo":"img/semiconductores/x-l1600(1).png",
-		"nombre":"TIP41C NPN",
-		"precio":"US$0.78",
-		"cantidad": 1,
-		"descripcion": ""
-	},
-	{
-		"id": "", 
-		"categoria": "semiconductor",
-		"archivo":"img/semiconductores/x-l1600(2).png",
-		"nombre":"NE555",
-		"precio":"US$0.65",
-		"cantidad": 1,
-		"descripcion": ""
-	},
-	{
-		"id": "", 
-		"categoria": "semiconductor",
-		"archivo":"img/semiconductores/x-l1600(3).png",
-		"nombre":"ATTINY85-20PU",
-		"precio":"US$4.54",
-		"cantidad": 1,
-		"descripcion": ""		
-	},
-	{	
-		"id": "", 
-		"categoria": "semiconductor",
-		"archivo":"img/semiconductores/x-l1600(4).png",
-		"nombre":"RS-232 DRIVERS",
-		"precio":"US$2.59",
-		"cantidad": 1,
-		"descripcion": ""
-	},
-	{
-		"id": "", 
-		"categoria": "semiconductor",
-		"archivo":"img/semiconductores/x-l1600(5).png",
-		"nombre":"Driver Motor L293D",
-		"precio":"US$1.56",
-		"cantidad": 1,
-		"descripcion": ""	
-	},
-	{
-		"id": "", 
-		"categoria": "boards",
-		"archivo":"img/boards/s-l1600(0).png",
-		"nombre":"Arduino nano",
-		"precio":"US $3.55",
-		"cantidad": 1,
-		"descripcion": ""
-	},
-	{
-		"id": "", 
-		"categoria": "boards",
-		"archivo":"img/boards/s-l1600(1).jpg",
-		"nombre":"Raspberry pi4",
-		"precio":"US $145.00",
-		"cantidad": 1,
-		"descripcion": ""
-	},
-	{
-		"id": "", 
-		"categoria": "boards",
-		"archivo":"img/boards/s-l1600(2).jpg",
-		"nombre":"Arduino uno WiFi Rev2",
-		"precio":"US $26.54",
-		"cantidad": 1,
-		"descripcion": ""		
-	},
-	{
-		"id": "", 
-		"categoria": "boards",
-		"archivo":"img/boards/s-l1600(3).png",
-		"nombre":"Artix-7 FPGA",
-		"precio":"US $159.00",
-		"cantidad": 1,
-		"descripcion": ""
-	},
-	{
-		"id": "", 
-		"categoria": "boards",
-		"archivo":"img/boards/s-l1600(4).png",
-		"nombre":"Elbert V2 -Spartan 3A",
-		"precio":"US $45.20",
-		"cantidad": 1,
-		"descripcion": ""
-	},
-	{
-		"id": "", 
-		"categoria": "boards",
-		"archivo":"img/boards/s-l1600(5).png",
-		"nombre":"TM4C123GXL Tiva C",
-		"precio":"US $44.99",
-		"cantidad": 1,
-		"descripcion": ""
-	},
-	{
-		"id": "", 
-		"categoria": "herramienta",
-		"archivo":"img/tools/h-l1600(0).png",
-		"nombre":"Estacion TMC de 50W",
-		"precio":"US $45.20",
-		"cantidad": 1,
-		"descripcion": ""
-	},
-	{
-		"id": "", 
-		"categoria": "herramienta",
-		"archivo":"img/tools/h-l1600(1).png",
-		"nombre":"Kit de soldadura",
-		"precio":"US $38.09",
-		"cantidad": 1,
-		"descripcion": ""
-	},
-	{
-		"id": "", 
+		"id": "15", 
 		"categoria": "herramienta",
 		"archivo":"img/tools/h-l1600(2).png",
 		"nombre":"Microscopio MC75T",
-		"precio":"US $761.71",
+		"precio":"761.71",
 		"cantidad": 1,
-		"descripcion": ""		
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."		
 	},
 	{
-		"id": "", 
-		"categoria": "herramienta",
-		"archivo":"img/tools/h-l1600(3).png",
-		"nombre":"Multimetro ZOYI ZT-98",
-		"precio":"US $25.77",
+		"id": "4", 
+		"categoria": "semiconductor",
+		"archivo":"img/semiconductores/x-l1600(3).png",
+		"nombre":"ATTINY85-20PU",
+		"precio":"4.54",
 		"cantidad": 1,
-		"descripcion": ""	
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."		
+	},
+	{	
+		"id": "5", 
+		"categoria": "semiconductor",
+		"archivo":"img/semiconductores/x-l1600(4).png",
+		"nombre":"RS-232 DRIVERS",
+		"precio":"2.59",
+		"cantidad": 1,
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."
 	},
 	{
-		"id": "", 
+		"id": "6", 
+		"categoria": "semiconductor",
+		"archivo":"img/semiconductores/x-l1600(5).png",
+		"nombre":"Driver Motor L293D",
+		"precio":"1.56",
+		"cantidad": 1,
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."	
+	},
+	{
+		"id": "17", 
 		"categoria": "herramienta",
 		"archivo":"img/tools/h-l1600(4).png",
 		"nombre":"Analizador de baterias",
-		"precio":"US $14.65",
+		"precio":"14.65",
 		"cantidad": 1,
-		"descripcion": ""	
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."	
 	},
 	{
-		"id": "", 
+		"id": "7", 
+		"categoria": "boards",
+		"archivo":"img/boards/s-l1600(0).png",
+		"nombre":"Arduino nano",
+		"precio":"3.55",
+		"cantidad": 1,
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."
+	},
+	{
+		"id": "8", 
+		"categoria": "boards",
+		"archivo":"img/boards/s-l1600(1).jpg",
+		"nombre":"Raspberry pi4",
+		"precio":"145.00",
+		"cantidad": 1,
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."
+	},
+	{
+		"id": "2", 
+		"categoria": "semiconductor",
+		"archivo":"img/semiconductores/x-l1600(1).png",
+		"nombre":"TIP41C NPN",
+		"precio":"0.78",
+		"cantidad": 1,
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."
+	},
+	{
+		"id": "10", 
+		"categoria": "boards",
+		"archivo":"img/boards/s-l1600(3).png",
+		"nombre":"Artix-7 FPGA",
+		"precio":"159.00",
+		"cantidad": 1,
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."
+	},
+	{
+		"id": "11", 
+		"categoria": "boards",
+		"archivo":"img/boards/s-l1600(4).png",
+		"nombre":"Elbert V2 -Spartan 3A",
+		"precio":"45.20",
+		"cantidad": 1,
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."
+	},
+	{
+		"id": "12", 
+		"categoria": "boards",
+		"archivo":"img/boards/s-l1600(5).png",
+		"nombre":"TM4C123GXL Tiva C",
+		"precio":"44.99",
+		"cantidad": 1,
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."
+	},
+	{
+		"id": "3", 
+		"categoria": "semiconductor",
+		"archivo":"img/semiconductores/x-l1600(2).png",
+		"nombre":"NE555",
+		"precio":"0.65",
+		"cantidad": 1,
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."
+	},
+	{
+		"id": "13", 
+		"categoria": "herramienta",
+		"archivo":"img/tools/h-l1600(0).png",
+		"nombre":"Estacion TMC de 50W",
+		"precio":"45.20",
+		"cantidad": 1,
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."
+	},
+	{
+		"id": "14", 
+		"categoria": "herramienta",
+		"archivo":"img/tools/h-l1600(1).png",
+		"nombre":"Kit de soldadura",
+		"precio":"38.09",
+		"cantidad": 1,
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."
+	},
+	{
+		"id": "16", 
+		"categoria": "herramienta",
+		"archivo":"img/tools/h-l1600(3).png",
+		"nombre":"Multimetro ZOYI ZT-98",
+		"precio":"25.77",
+		"cantidad": 1,
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."	
+	},
+	{
+		"id": "18", 
 		"categoria": "herramienta",
 		"archivo":"img/tools/h-l1600(5).png",
 		"nombre":"Probador LCR-TC1",
-		"precio":"US $11.69",
+		"precio":"11.69",
 		"cantidad": 1,
-		"descripcion": ""
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."
+	},
+	{
+		"id": "9", 
+		"categoria": "boards",
+		"archivo":"img/boards/s-l1600(2).jpg",
+		"nombre":"Arduino uno WiFi Rev2",
+		"precio":"26.54",
+		"cantidad": 1,
+		"descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor."		
 	}
 ]
 }
