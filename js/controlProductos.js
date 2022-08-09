@@ -11,6 +11,21 @@ export const render_allProductos = () => {
 	lista.articulo.forEach( dato => {
 		todosLosProductos.appendChild(crearTarjetaHTML(dato, true));
 	});
+	
+	//se selecciona todos los iconos de basurero para poder eliminar el articulo
+	const borrarProducto = document.querySelectorAll(".fa-trash");
+	//recorrido de todos os elementos seleccionados
+	borrarProducto.forEach(	articulo => {
+	//se e agrega un evento a cada icono seleccionado
+		articulo.addEventListener('click', (event) => {
+		//se obtiene el id del elemento padre de la tarjeta	
+		const idProducto = event.path[3].getAttribute("id");
+		//se manda el id para borrarlo del localStorage
+		productosServicios.borrarProducto(idProducto);
+		//se eliminacion del nodo hijo
+		event.path[3].remove();
+		});
+	});
 }
 
 

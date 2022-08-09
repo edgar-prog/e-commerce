@@ -24,7 +24,8 @@ export const producto = {
 	nombre : "",
 	precio : "",
 	descripcion:"",
-	id: ""
+	id : uuid.v4(),
+	cantidad: 1
 }
 
 const validarFormulario = (event) => {
@@ -67,6 +68,7 @@ const validarFormulario = (event) => {
 		break;
 		case "descripcion":
 			producto.descripcion = event.target.value;
+			
 		break;
 		
 		case "correo":

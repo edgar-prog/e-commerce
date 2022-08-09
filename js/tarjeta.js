@@ -1,6 +1,34 @@
 
+
+export function showInfo(datos)  {
+	let tarjeta = document.createElement("div");
+	tarjeta.className = "modal__container";
+	
+	let imagenProducto = document.createElement("img");
+	imagenProducto.className = "modal__img";
+	imagenProducto.src = datos.archivo;
+	
+	let tituloProducto = document.createElement("h2");
+	tituloProducto.className = "modal__title";
+	tituloProducto.innerText = "Descripcion";
+	
+	let descripcionProducto = document.createElement("p");
+	descripcionProducto.className = "modal__info";
+	descripcionProducto.innerText = datos.descripcion;
+	
+	let botonProducto = document.createElement("button");
+	botonProducto.className = "button";
+	botonProducto.innerText = "regresar";
+	
+	tarjeta.appendChild(imagenProducto);
+	tarjeta.appendChild(tituloProducto);
+	tarjeta.appendChild(descripcionProducto);
+	tarjeta.appendChild(botonProducto);
+	return tarjeta;
+}
+
 export function crearTarjetaHTML(datos, editable) {
-	const tarjeta = document.createElement("div");
+	let tarjeta = document.createElement("div");
 	tarjeta.className = "card__producto";
 	tarjeta.appendChild(imagenHTML(datos.archivo, editable));
 	tarjeta.appendChild(infoHTML(datos.nombre, datos.precio, datos.cantidad,editable));

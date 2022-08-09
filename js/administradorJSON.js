@@ -1,12 +1,36 @@
 
-import { crearTarjetaHTML }  from "./tarjeta.js";
+import { crearTarjetaHTML, showInfo }  from "./tarjeta.js";
 
 const actualizarSecciones = () => {
 	let listaArticulos = JSON.parse(localStorage.getItem("articulo"));
 	listaArticulos.articulo.forEach( dato => {
-		insertarProductoSeccion(dato);	
+		insertarProductoSeccion(dato);
+	});
+	const iconAllVer =  document.querySelectorAll(".container__productos .fa-eye");
+	
+	iconAllVer.forEach(node => {
+	//se e agrega un evento a cada icono seleccionado
+		node.addEventListener('click', (event) => {
+			let idProducto = event.path[2].getAttribute("id");
+			let mostrarCard = showInfo(buscarProducto(idProducto));
+			let modal = document.querySelector(".modal");
+			borrarAllSeccion(".modal");
+			modal.appendChild(mostrarCard);
+			modal.classList.add("modal--show");
+			let closeModal = document.querySelector(".modal__container .button");
+			closeModal.addEventListener("click",() =>{
+				modal.classList.remove("modal--show");
+			});
+		});
 	});
 }
+
+const buscarProducto = (id) => {
+	let lista = JSON.parse(localStorage.getItem("articulo"));
+	let indice = lista.articulo.find(node => node.id == id);
+	return indice;
+}
+
 
 const insertarProductoSeccion = (dato) => {
 	let seccion = "";
@@ -105,4 +129,5 @@ export const productosServicios = {
 	insertarProductoSeccion,
 	actualizarSecciones,
 	agregarProducto,
+	buscarProducto
 }

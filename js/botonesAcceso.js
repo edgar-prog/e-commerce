@@ -25,6 +25,7 @@ btnLogin.addEventListener("click", () =>{
 	login.style.display = "block";
 });
 
+
 //interaccion con el botn de regreso
 const btnBack = document.querySelector("#back");
 //muestra todo el contenido de productos y el banner
@@ -36,6 +37,24 @@ btnBack.addEventListener("click", () =>{
 	productos.style.display = "block";
 });
 
+//interaccion con el llenado del formulario de acceso
+const formularioLogin = document.getElementById("form-login");
+formularioLogin.addEventListener("submit",(event)=>{
+	event.preventDefault()
+	if(campo.correo && campo.password) {
+		//se limpian el formulario login
+		formularioLogin.reset();
+		//se desabilitan as secciones y botones
+		login.style.display = "none";
+		btnBack.style.display = "none";
+		btnLogout.style.display = "block";
+		all_productos.style.display = "block";
+		//se llena la seccion con todos los articulos sin clasificacion
+		render_allProductos();
+	}
+});
+
+//interaccion con el boton de acceso al formulario del producto ha agregar
 const btnAddProducto = document.querySelector(".cards__agregar");
 btnAddProducto.addEventListener("click",() => {
 	btnLogout.style.display = "none";
@@ -46,14 +65,18 @@ btnAddProducto.addEventListener("click",() => {
 	add_productos.style.display = "block";
 });
 
+//boton que permite retornar a a seccion donde se muestran todos los productos
 const btnMenu = document.querySelector("#menu");
 btnMenu.addEventListener("click", () => {
 	add_productos.style.display = "none";
 	btnMenu.style.display = "none";
 	btnLogout.style.display = "block";
 	all_productos.style.display = "block";
+	//se llena la seccion con todos los articulos sin clasificacion
+	render_allProductos();
 });
 
+//boton para retornar al inicio, mostrando las secciones de productos y e banner
 const btnLogout = document.querySelector("#logout");
 btnLogout.addEventListener("click",() => {
 	btnLogout.style.display = "none";
@@ -69,53 +92,21 @@ btnLogout.addEventListener("click",() => {
 	productosServicios.actualizarSecciones();
 });
 
-
-const formularioLogin = document.getElementById("form-login");
-formularioLogin.addEventListener("submit",(event)=>{
-	event.preventDefault()
-	if(campo.correo && campo.password) {
-		
-		formularioLogin.reset();
-		
-		login.style.display = "none";
-		btnBack.style.display = "none";
-		btnLogout.style.display = "block";
-		all_productos.style.display = "block";
-		
-		//se llena la seccion con todos los articulos sin clasificacion
-		render_allProductos();
-		
-		//se selecciona todos los iconos de basurero para poder eliminar el articulo
-		const borrarProducto = document.querySelectorAll(".fa-trash");
-		//recorrido de todos os elementos seleccionados
-		borrarProducto.forEach(	articulo => {
-			//se e agrega un evento a cada icono seleccionado
-			articulo.addEventListener('click', (event) => {
-			//se obtiene el id del elemento padre de la tarjeta	
-			const idProducto = event.path[3].getAttribute("id");
-			//se manda el id para borrarlo del localStorage
-			productosServicios.borrarProducto(idProducto);
-			//se eliminacion del nodo hijo
-			event.path[3].remove();
-			});
-		});
-	}
-});
-
-
+//formulario para agregar e nuevo producto
 const formularioProducto = document.getElementById("form-producto");
 formularioProducto.addEventListener("submit",(event)=>{
 	event.preventDefault();
+	//se verifica que los campos cumplam con lo requerido
 	if(campo.url && campo.categoria 
 	&& campo.nombre && campo.precio) {
-		producto.id = uuid.v4();
-		producto.cantidad = 1;
+		//se guarda el nuevo dato en el locaStorage
 		productosServicios.agregarProducto(producto);
 		document.querySelector(".exito-general").style.display = "block";
+		//se da un tiempo de espera para limpiar el formulario
 		setTimeout(() => {
 			document.querySelector(".exito-general").style.display = "none";
 			formularioProducto.reset();
-		}, 4000);
+		}, 3000);
 	}
 });
 
