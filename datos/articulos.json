@@ -4,7 +4,7 @@
 	{
 		"id": "1", 
 		"categoria": "semiconductor",
-		"archivo":"img/semiconductores/x-l1600(0).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/semiconductores/x-l1600(0).PNG?raw=true",
 		"nombre":"TDA7293 100W",
 		"precio":"6.48",
 		"cantidad": 1,
@@ -13,7 +13,7 @@
 	{
 		"id": "15", 
 		"categoria": "herramienta",
-		"archivo":"img/tools/h-l1600(2).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/tools/h-l1600(2).png?raw=true",
 		"nombre":"Microscopio MC75T",
 		"precio":"761.71",
 		"cantidad": 1,
@@ -22,7 +22,7 @@
 	{
 		"id": "4", 
 		"categoria": "semiconductor",
-		"archivo":"img/semiconductores/x-l1600(3).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/semiconductores/x-l1600(3).PNG?raw=true",
 		"nombre":"ATTINY85-20PU",
 		"precio":"4.54",
 		"cantidad": 1,
@@ -31,7 +31,7 @@
 	{	
 		"id": "5", 
 		"categoria": "semiconductor",
-		"archivo":"img/semiconductores/x-l1600(4).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/semiconductores/x-l1600(4).PNG?raw=true",
 		"nombre":"RS-232 DRIVERS",
 		"precio":"2.59",
 		"cantidad": 1,
@@ -40,7 +40,7 @@
 	{
 		"id": "6", 
 		"categoria": "semiconductor",
-		"archivo":"img/semiconductores/x-l1600(5).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/semiconductores/x-l1600(5).PNG?raw=true",
 		"nombre":"Driver Motor L293D",
 		"precio":"1.56",
 		"cantidad": 1,
@@ -49,7 +49,7 @@
 	{
 		"id": "17", 
 		"categoria": "herramienta",
-		"archivo":"img/tools/h-l1600(4).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/tools/h-l1600(4).png?raw=true",
 		"nombre":"Analizador de baterias",
 		"precio":"14.65",
 		"cantidad": 1,
@@ -58,7 +58,7 @@
 	{
 		"id": "7", 
 		"categoria": "boards",
-		"archivo":"img/boards/s-l1600(0).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/boards/s-l1600(0).png?raw=true",
 		"nombre":"Arduino nano",
 		"precio":"3.55",
 		"cantidad": 1,
@@ -67,7 +67,7 @@
 	{
 		"id": "8", 
 		"categoria": "boards",
-		"archivo":"img/boards/s-l1600(1).jpg",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/boards/s-l1600(1).jpg?raw=true",
 		"nombre":"Raspberry pi4",
 		"precio":"145.00",
 		"cantidad": 1,
@@ -76,7 +76,7 @@
 	{
 		"id": "2", 
 		"categoria": "semiconductor",
-		"archivo":"img/semiconductores/x-l1600(1).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/semiconductores/x-l1600(1).PNG?raw=true",
 		"nombre":"TIP41C NPN",
 		"precio":"0.78",
 		"cantidad": 1,
@@ -85,7 +85,7 @@
 	{
 		"id": "10", 
 		"categoria": "boards",
-		"archivo":"img/boards/s-l1600(3).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/boards/s-l1600(3).png?raw=true",
 		"nombre":"Artix-7 FPGA",
 		"precio":"159.00",
 		"cantidad": 1,
@@ -94,7 +94,7 @@
 	{
 		"id": "11", 
 		"categoria": "boards",
-		"archivo":"img/boards/s-l1600(4).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/boards/s-l1600(4).png?raw=true",
 		"nombre":"Elbert V2 -Spartan 3A",
 		"precio":"45.20",
 		"cantidad": 1,
@@ -103,7 +103,7 @@
 	{
 		"id": "12", 
 		"categoria": "boards",
-		"archivo":"img/boards/s-l1600(5).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/boards/s-l1600(5).png?raw=true",
 		"nombre":"TM4C123GXL Tiva C",
 		"precio":"44.99",
 		"cantidad": 1,
@@ -112,7 +112,7 @@
 	{
 		"id": "3", 
 		"categoria": "semiconductor",
-		"archivo":"img/semiconductores/x-l1600(2).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/semiconductores/x-l1600(2).PNG?raw=true",
 		"nombre":"NE555",
 		"precio":"0.65",
 		"cantidad": 1,
@@ -121,7 +121,7 @@
 	{
 		"id": "13", 
 		"categoria": "herramienta",
-		"archivo":"img/tools/h-l1600(0).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/tools/h-l1600(0).png?raw=true",
 		"nombre":"Estacion TMC de 50W",
 		"precio":"45.20",
 		"cantidad": 1,
@@ -130,7 +130,7 @@
 	{
 		"id": "14", 
 		"categoria": "herramienta",
-		"archivo":"img/tools/h-l1600(1).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/tools/h-l1600(1).png?raw=true",
 		"nombre":"Kit de soldadura",
 		"precio":"38.09",
 		"cantidad": 1,
@@ -139,7 +139,7 @@
 	{
 		"id": "16", 
 		"categoria": "herramienta",
-		"archivo":"img/tools/h-l1600(3).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/tools/h-l1600(3).png?raw=true",
 		"nombre":"Multimetro ZOYI ZT-98",
 		"precio":"25.77",
 		"cantidad": 1,
@@ -148,7 +148,7 @@
 	{
 		"id": "18", 
 		"categoria": "herramienta",
-		"archivo":"img/tools/h-l1600(5).png",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/tools/h-l1600(5).png?raw=true",
 		"nombre":"Probador LCR-TC1",
 		"precio":"11.69",
 		"cantidad": 1,
@@ -157,7 +157,7 @@
 	{
 		"id": "9", 
 		"categoria": "boards",
-		"archivo":"img/boards/s-l1600(2).jpg",
+		"archivo":"https://github.com/edgar-prog/e-commerce/blob/master/img/boards/s-l1600(2).jpg?raw=true",
 		"nombre":"Arduino uno WiFi Rev2",
 		"precio":"26.54",
 		"cantidad": 1,

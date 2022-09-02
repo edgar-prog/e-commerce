@@ -1,5 +1,6 @@
 
 
+
 export function showInfo(datos)  {
 	let tarjeta = document.createElement("div");
 	tarjeta.className = "modal__container";

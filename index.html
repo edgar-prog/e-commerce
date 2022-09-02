@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="css/contacto.css">
 		<link rel="stylesheet" href="css/footer.css">
 		<link rel="stylesheet" href="css/modal.css">
+		<link rel="stylesheet" href="css/update.css">
 	</head>
 <body>
 	<section class="container__header">
@@ -145,27 +146,27 @@
 			</div>
 			<form class="formulario" id="form-producto">
 				<div class="casilla__input" id="url">
-					<input type="text" class="input" placeholder=" " name="url" required>
+					<input type="text" class="input"  name="url" required>
 					<span class="label">URL de la imagen</span>
 					<p class="error">Error en direccion URL de la imagen</p>
 				</div>
 				<div class="casilla__input" id="categoria">
-					<input type="text" class="input" placeholder=" " name="categoria" required>
+					<input type="text" class="input"  name="categoria" required>
 					<span class="label">Categoria</span>
 					<p class="error">Error ingrese la categoria correctamente</p>
 				</div>
 				<div class="casilla__input" id="nombre">
-					<input type="text" class="input" placeholder=" " name="nombre" required>
+					<input type="text" class="input"  name="nombre" maxlength="20" required>
 					<span class="label">Nombre del producto</span>
 					<p class="error">Error debe ingresar un nombre</p>
 				</div>
 				<div class="casilla__input" id="precio">
-					<input type="text" class="input" placeholder=" " name="precio" required>
+					<input type="text" class="input"  name="precio" required>
 					<span class="label">Pecio del producto</span>
 					<p class="error">Error debe ingresar un valor numerico</p>
 				</div>
 				<div class="casilla__input" id="descripcion">
-					<input type="text" class="textarea" name="descripcion" placeholder="Descripcion del producto">
+					<input type="text" class="textarea" name="descripcion" maxlength="150" placeholder="Descripcion del producto">
 				</div>
 				<button type="submit" class="button">Agregar producto</button>
 				<div class="exito-general">
@@ -192,16 +193,16 @@
 				<div class="formulario__titulo">
 					<label>Habla con nosotros</label>
 				</div>
-				<div class="formulario" >
+				<form class="formulario" id="form-contacto">
 					<div class="casilla__input">
-						<input type="text" class="input"placeholder=" " name="contacto">
+						<input type="text" class="input"placeholder=" " name="contacto" maxlength="40" required>
 						<span class="label">Nombre</span>
 					</div>
 					<div class="casilla__input">
-						<textarea id="" class="textarea" placeholder="Mensaje..."></textarea>
+						<textarea id="" class="textarea" placeholder="Mensaje..." maxlength="120" required></textarea>
 					</div>
-					<button class="button">Enviar mensaje</button>
-				</div>
+					<button type="submit" class="button">Enviar mensaje</button>
+				</form>
 			</div>
 		</div>
 	</section>
@@ -218,8 +219,47 @@
 		
 	</section>
 	
-	<script type="module" src="js/botonesAcceso.js"></script>
+	<section class="container__update">
+		<div class="update-section">
+			<div class="formulario__titulo">
+				<label>Actualizar producto</label>
+			</div>
+			<form class="formulario" id="form-udpate">
+				<div class="casilla__input" id="url">
+					<input type="text" class="input"  name="url" required>
+					<span class="label">URL de la imagen</span>
+					<p class="error">Error en direccion URL de la imagen</p>
+				</div>
+				<div class="casilla__input" id="categoria">
+					<input type="text" class="input"  name="categoria" required>
+					<span class="label">Categoria</span>
+					<p class="error">Error ingrese la categoria correctamente</p>
+				</div>
+				<div class="casilla__input" id="nombre">
+					<input type="text" class="input"  name="nombre" maxlength="20" required>
+					<span class="label">Nombre del producto</span>
+					<p class="error">Error debe ingresar un nombre</p>
+				</div>
+				<div class="casilla__input" id="precio">
+					<input type="text" class="input"  name="precio" required>
+					<span class="label">Pecio del producto</span>
+					<p class="error">Error debe ingresar un valor numerico</p>
+				</div>
+				<div class="casilla__input" id="descripcion">
+					<input type="text" class="input" name="descripcion" maxlength="150" placeholder="Descripcion del producto">
+				</div>
+				<button type="submit" class="button">Actualizar</button>
+				<div class="exito-general">
+					<p><i class="fa-solid fa-thumbs-up"></i> Informacion actualizada </p>
+				</div>
+			</form>		
+		</div>
+	</section>
+	
+	<script  type="module" src="js/botones_head.js"></script>
+	<script  type="module" src="js/main.js"></script>
+	<!-- <script type="module" src="js/botonesAcceso.js"></script>
 	<script type="module" src="js/controlProductos.js"></script>
-	<script type="module" src="js/validaciones.js"></script>
+	<script type="module" src="js/validaciones.js"></script> -->
 <body>
 </html>

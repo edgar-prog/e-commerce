@@ -1,0 +1,29 @@
+
+
+.container__update {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #111111bd;
+	display: flex;
+	opacity: 0; 
+	pointer-events: none;
+}
+
+.container__update--show {
+	opacity: 1;
+	pointer-events: unset;
+}
+
+.update-section {
+	margin: auto;
+	width: 60%;
+	height: 60%;
+	max-width: 360px;
+	background-color: #FFF;
+	border-radius: 15px;
+	padding: 2rem;
+	text-align: center;
+}

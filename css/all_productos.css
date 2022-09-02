@@ -80,7 +80,7 @@
 
 .container__img {
 	position: relative;
-	width: 150px;
+	width: auto;
 	height: 170px;
 }
 

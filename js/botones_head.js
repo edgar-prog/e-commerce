@@ -1,7 +1,7 @@
 
-import { productosServicios }  from "./administradorJSON.js";
-import { render_allProductos }  from "./controlProductos.js";
+import { DOMServicios }  from "./DOMServicios.js";
 import { campo, producto }  from "./validaciones.js";
+import { productosServicios }  from "./productosServicios.js";
 
 /*control de las secciones que se utilizan en la plataforma*/
 const banner = document.querySelector(".container__banner");
@@ -14,6 +14,7 @@ const all_productos = document.querySelector(".container__all-productos");
 //selecciona la seccion que muestra el formulario para agregar producto
 const add_productos = document.querySelector(".container__add-producto");
 
+
 //interaccion con el boton login
 const btnLogin = document.querySelector("#login");
 //esconde las secciones y solo muestra el formulario login y cambia de boton en el head
@@ -24,7 +25,6 @@ btnLogin.addEventListener("click", () =>{
 	btnBack.style.display = "block";
 	login.style.display = "block";
 });
-
 
 //interaccion con el botn de regreso
 const btnBack = document.querySelector("#back");
@@ -40,7 +40,7 @@ btnBack.addEventListener("click", () =>{
 //interaccion con el llenado del formulario de acceso
 const formularioLogin = document.getElementById("form-login");
 formularioLogin.addEventListener("submit",(event)=>{
-	event.preventDefault()
+	event.preventDefault();
 	if(campo.correo && campo.password) {
 		//se limpian el formulario login
 		formularioLogin.reset();
@@ -50,8 +50,24 @@ formularioLogin.addEventListener("submit",(event)=>{
 		btnLogout.style.display = "block";
 		all_productos.style.display = "block";
 		//se llena la seccion con todos los articulos sin clasificacion
-		render_allProductos();
+		DOMServicios.insertarAllProductos();
 	}
+});
+
+//boton para retornar al inicio, mostrando las secciones de productos y e banner
+const btnLogout = document.querySelector("#logout");
+btnLogout.addEventListener("click",() => {
+	btnLogout.style.display = "none";
+	btnLogin.style.display = "block";
+	banner.style.display = "block";
+	productos.style.display = "block";
+	all_productos.style.display = "none";
+	//se elimnan los datos tarjetas deñ DOM
+	DOMServicios.borrarAllSeccion("[data-boards]");
+	DOMServicios.borrarAllSeccion("[data-tools]");
+	DOMServicios.borrarAllSeccion("[data-semiconductores]");
+	//Se actualizan las categorias a mostrar
+	DOMServicios.actualizarSecciones();
 });
 
 //interaccion con el boton de acceso al formulario del producto ha agregar
@@ -73,33 +89,19 @@ btnMenu.addEventListener("click", () => {
 	btnLogout.style.display = "block";
 	all_productos.style.display = "block";
 	//se llena la seccion con todos los articulos sin clasificacion
-	render_allProductos();
-});
-
-//boton para retornar al inicio, mostrando las secciones de productos y e banner
-const btnLogout = document.querySelector("#logout");
-btnLogout.addEventListener("click",() => {
-	btnLogout.style.display = "none";
-	btnLogin.style.display = "block";
-	banner.style.display = "block";
-	productos.style.display = "block";
-	all_productos.style.display = "none";
-	//se elimnan los datos tarjetas deñ DOM
-	productosServicios.borrarAllSeccion("[data-boards]");
-	productosServicios.borrarAllSeccion("[data-tools]");
-	productosServicios.borrarAllSeccion("[data-semiconductores]");
-	//Se actualizan las categorias a mostrar
-	productosServicios.actualizarSecciones();
+	DOMServicios.insertarAllProductos();
 });
 
 //formulario para agregar e nuevo producto
 const formularioProducto = document.getElementById("form-producto");
 formularioProducto.addEventListener("submit",(event)=>{
 	event.preventDefault();
+	console.log("enviar");
 	//se verifica que los campos cumplam con lo requerido
 	if(campo.url && campo.categoria 
 	&& campo.nombre && campo.precio) {
 		//se guarda el nuevo dato en el locaStorage
+		producto.id = uuid.v4();
 		productosServicios.agregarProducto(producto);
 		document.querySelector(".exito-general").style.display = "block";
 		//se da un tiempo de espera para limpiar el formulario
@@ -110,8 +112,8 @@ formularioProducto.addEventListener("submit",(event)=>{
 	}
 });
 
-
-
-
-
-
+const formularioContacto = document.getElementById("form-contacto");
+formularioContacto.addEventListener("submit", (event)=>{
+	event.preventDefault();
+	formularioContacto.reset();
+});

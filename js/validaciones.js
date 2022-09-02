@@ -23,12 +23,12 @@ export const producto = {
 	categoria : "",
 	nombre : "",
 	precio : "",
-	descripcion:"",
-	id : uuid.v4(),
-	cantidad: 1
+	descripcion : "",
+	id : "",
+	cantidad : 1
 }
 
-const validarFormulario = (event) => {
+export const validarFormulario = (event) => {
 	switch(event.target.name) {
 		case "url":
 			if(expresiones.url.test(event.target.value)) {
@@ -68,7 +68,6 @@ const validarFormulario = (event) => {
 		break;
 		case "descripcion":
 			producto.descripcion = event.target.value;
-			
 		break;
 		
 		case "correo":
@@ -103,4 +102,8 @@ inputsProducto.forEach((input)=>{
 });
 
 
-
+const inputsUpdate = document.querySelectorAll("#form-udpate input");	
+inputsUpdate.forEach((input)=>{
+	input.addEventListener("keyup",validarFormulario);
+	/* input.addEventListener("blur",validarFormulario); */
+});
